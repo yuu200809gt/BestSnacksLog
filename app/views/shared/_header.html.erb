@@ -1,0 +1,16 @@
+<header>
+  <div class="header_container">
+    <div class="header_left">
+      <h2 class="main_title"><%= link_to "BEST SNACKS LOG", root_path, class: "page_title" %></h2>
+        <div class="account_button">
+            <% if user_signed_in? %>
+            <li><%= link_to "サインアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "user_list" %></li>
+            <% else %>
+            <li><%= link_to "ゲストログイン", users_guest_sign_in_path, data: { turbo_method: :post }, class: "user_list" %></li>
+            <li><%= link_to "ログイン", new_user_session_path, class: "user_list Login" %></li>
+            <li><%= link_to "新規登録", new_user_registration_path, class: "user_list New" %></li>
+            <% end %>
+        </div>
+    </div>   
+  </div>    
+</header>

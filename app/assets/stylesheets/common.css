@@ -1,0 +1,30 @@
+.header_container {
+    height: 100px;
+    background-color: rgb(155, 122, 122);
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.main_title {
+    margin-top: 0;
+}
+
+.page_title {
+    color: #FFF;
+}
+
+.account_button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 60px;
+}
+
+.user_list {
+    color: #FFF;
+}
