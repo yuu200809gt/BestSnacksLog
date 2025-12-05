@@ -1,6 +1,7 @@
 .header_container {
     height: 100px;
     background-color: rgb(155, 122, 122);
+    position: relative;
 }
 
 .header_left {
@@ -27,4 +28,22 @@
 
 .user_list {
     color: #FFF;
+}
+
+.footer_container {
+    height: 200px;
+    background-color: rgb(155, 122, 122);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_left {
+    padding-left: 30px;
+}
+
+.main_title_under {
+    margin-bottom: 0;
 }
