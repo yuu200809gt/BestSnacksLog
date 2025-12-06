@@ -1,6 +1,7 @@
 .header_container {
     height: 100px;
     background-color: rgb(155, 122, 122);
+    position: relative;
 }
 
 .header_left {
@@ -27,4 +28,73 @@
 
 .user_list {
     color: #FFF;
+}
+
+.footer_container {
+    height: 200px;
+    background-color: rgb(155, 122, 122);
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_left {
+    padding-left: 30px;
+}
+
+.main_title_under {
+    margin-bottom: 0;
+}
+
+.main_content {
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.top {
+    width: 100%;
+}
+
+.top_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(56, 54, 54);
+    height: 40vh;
+}
+
+.top_title {
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.sub_title {
+    font-size: 20px;
+    color: #FFF;
+}
+
+.search {
+    font-size: 30px;
+}
+
+.recommend_container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.item {
+    height: 20vh;
+    border-radius: 25px;
+    background-color: beige;
+    width: calc((60% - 90px) / 4);
+}
+
+.item_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
