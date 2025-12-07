@@ -98,3 +98,31 @@
   align-items: center;
   justify-content: center;
 }
+
+.sign_container {
+  background-color: rgb(255, 250, 243);
+  box-shadow: 2px 2px 2px 2px gray;
+  display: flex;
+  padding: 60px;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  border-radius: 5rem;
+}
+
+.form_field {
+  text-align: left;
+  font-weight: 500;
+}
+
+.button{
+  width: 50vh;
+}
+
+.actions {
+  padding: 20px;
+}
+
+.required {
+    color: red;
+}
