@@ -1,0 +1,18 @@
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "snacks_show", "data-turbo-track": "reload" %>
+<% end %>
+
+<div class="return_edit">
+<p><%= link_to "⬅ 戻る", :back, class: "return_page" %></p>
+</div>
+
+<div class="snacks_top">
+  <div class="snacks_item">
+    <%= image_tag "food.png", alt: "おつまみ画像", class: "snack_img_show" %>
+    <h5 class="snacks_name"><%= @snack.name %></h5>
+    <p class="snacks_alcohol">合うお酒：<%= @snack.best_alcohol %></p>
+    <p class="snacks_types">食べ物のカテゴリ：<%= @snack.food_types %></p>
+    <p class="snacks_memo">メモ<br><%= @snack.memo %></p>
+    <p><%= link_to "編集", [:edit, @snack], class: "edit_page btn btn-primary" %></p> 
+  </div>
+</div>

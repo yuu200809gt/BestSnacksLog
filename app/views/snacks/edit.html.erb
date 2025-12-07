@@ -1,0 +1,29 @@
+<div class="sign_container">
+  <%= form_with model: @snack, local: true do |f| %>
+    <h2>おつまみ編集</h2>
+    <div class="form_field">
+      <%= f.label :name, "おつまみ名"  %><br>
+      <%= f.text_field :name, autofocus: true,  placeholder: "おつまみ名を入力", class: 'form-control' %>
+      <p class="required"><strong>※入力必須です</strong></p><br>
+    </div>
+    <div class="form_field">
+      <%= f.label :best_alcohol, "合うお酒" %><br />
+      <%= f.text_field :best_alcohol, placeholder: "お酒を入力", class: 'form-control' %>
+      <p class="required"><strong>※入力必須です</strong></p><br>
+    </div>
+    <div class="form_field">
+      <%= f.label :food_types, "食べ物カテゴリ" %><br />
+      <%= f.text_field :food_types, placeholder: "食べ物のカテゴリを入力", class: 'form-control' %>
+      <p class="required"><strong>※入力必須です</strong></p><br>
+    </div>
+    <div class="form_field">
+      <%= f.label :memo, "メモ" %><br />
+      <%= f.text_area :memo, placeholder: "メモを入力", class: 'form-control' %>
+      <p class="required"><strong>※入力必須です</strong></p><br>
+    </div>
+  
+    <ul class="actions">
+        <li class="actions"><%= f.submit "更新する", class: "button btn btn-primary" %></li>
+    </ul>
+  <% end %>
+</div>

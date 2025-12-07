@@ -1,0 +1,41 @@
+.return_edit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.return_page {
+    margin-left: 70px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.snacks_top {
+    background-color: rgb(226, 207, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px gray;
+    height: 85%;
+    padding: 60px 60px 200px 60px;
+    margin: 0px 400px 0 400px;
+    border-radius: 5rem;
+}
+
+.snacks_item {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 2px gray;
+    height: 100%;
+    padding: 60px 60px 200px 60px;
+    margin: 0px 400px 0 400px;
+}
+
+.snack_img_show {
+    width: 60vh;
+}
+
+.snacks_memo {
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-all;
+}
