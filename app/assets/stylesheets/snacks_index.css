@@ -1,0 +1,31 @@
+.snack_container {
+    padding: 30px;
+}
+
+.total_snack {
+    padding-bottom: 20px;
+}
+
+.snack_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.Snack {
+  background-color: rgb(255, 212, 177);
+  padding-left: 0;
+  width: calc((60% - 70px) / 4);
+}
+
+.snack_img {
+    height: 100%;
+    width: 100%;
+}
+
+.my_snack_title {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
