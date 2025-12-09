@@ -4,17 +4,17 @@
     <p class="sub_title"><strong>~お酒の相棒、きっと見つかる~</strong></p>
   </div>
 </div>
-<h2 class="search">お酒から探す</h2>
+<h2 class="search">お酒から探す🍺</h2>
 <div class="recommend_container">
-  <div class="item item_title">ビールに合う</div>
-  <div class="item item_title">サワーに合う</div>
-  <div class="item item_title">ハイボールに合う</div>
-  <div class="item item_title">日本酒・焼酎に合う</div>
+  <div class="item item_title"><%= link_to "ビールに合う", snacks_path(params: {alcohol: "ビール"}) %></div>
+  <div class="item item_title"><%= link_to "サワーに合う", snacks_path(params: {alcohol: "サワー"}) %></div>
+  <div class="item item_title"><%= link_to "ハイボールに合う", snacks_path(params: {alcohol: "ハイボール"}) %></div>
+  <div class="item item_title"><%= link_to "日本酒に合う", snacks_path(params: {alcohol: "日本酒"}) %></div>
 </div>
-<h2 class="search">料理から探す</h2>
+<h2 class="search">料理から探す🥘</h2>
 <div class="recommend_container">
-  <div class="item item_title">ガッツリ系</div>
-  <div class="item item_title">さっぱり系</div>
-  <div class="item item_title">魚介系</div>
-  <div class="item item_title">小皿・スナック系</div>
+  <div class="item item_title"><%= link_to "ガッツリ系", snacks_path(params: {best_snack: "ガッツリ"}) %></div>
+  <div class="item item_title"><%= link_to "さっぱり系", snacks_path(params: {best_snack: "さっぱり"}) %></div>
+  <div class="item item_title"><%= link_to "魚介系", snacks_path(params: {best_snack: "魚介"}) %></div>
+  <div class="item item_title"><%= link_to "スナック系", snacks_path(params: {best_snack: "スナック"}) %></div>
 </div>

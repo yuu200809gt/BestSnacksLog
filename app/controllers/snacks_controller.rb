@@ -3,6 +3,20 @@ class SnacksController < ApplicationController
 
   def index
     @snacks = Snack.all
+    best_snack = params[:best_snack]
+    alcohols = params[:alcohol]
+
+    if params[:best_snack].present?
+      @snacks = @snacks.where("food_types LIKE ?", "%#{best_snack}%")
+    end
+
+    if params[:alcohol].present?
+      @snacks = @snacks.where("best_alcohol LIKE ?", "%#{alcohols}%" )
+    end
+
+    if params[:best_snack].blank? && params[:alcohol].blank?
+      @snacks
+    end
   end
 
   def new
@@ -44,7 +58,7 @@ class SnacksController < ApplicationController
   end
 
   def snack_params
-    params.require(:snack).permit(:name, :image, :memo, :best_alcohol, :food_types)
+    params.require(:snack).permit(:name, :image, :memo, :best_alcohol, :food_types, :food)
   end
 
 end
