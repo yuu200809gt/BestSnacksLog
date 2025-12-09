@@ -8,10 +8,15 @@
     <% @snacks.each do |snack| %>
     <li class="Snack">
     <div class="snack_detail">
+      <% if snack.food.attached? %>
+      <%= image_tag snack.food.variant(:index_size), alt: "おつまみ画像" %>
+      <% else %>
       <%= image_tag "food.png", alt: "おつまみ画像", class: "snack_img" %>
+      <% end %>
       <h5 class="snack_name"><%= snack.name %></h5>
       <p class="snack_alcohol">合うお酒：<%= snack.best_alcohol %></p>
       <p class="snack_types">食べ物のカテゴリ：<%= snack.food_types %></p>
+      <p class="snack_memo">メモ：<%= snack.memo %></p>
       <p><%= link_to "詳細はこちら", snack, class: "btn btn-dark" %></p>
     </div>
     </li>

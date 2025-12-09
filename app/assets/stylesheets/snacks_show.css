@@ -11,31 +11,29 @@
 }
 
 .snacks_top {
-    background-color: rgb(226, 207, 207);
+    background-color: rgb(252, 232, 53);
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 2px 2px gray;
-    height: 85%;
-    padding: 60px 60px 200px 60px;
-    margin: 0px 400px 0 400px;
+    align-items: center;   
+    margin: auto;
+    padding: 50px;
+    width: 90vh;
     border-radius: 5rem;
 }
 
 .snacks_item {
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 2px 2px gray;
-    height: 100%;
-    padding: 60px 60px 200px 60px;
-    margin: 0px 400px 0 400px;
-}
-
-.snack_img_show {
-    width: 60vh;
+    height: 900px;
+    padding: 80px;
 }
 
 .snacks_memo {
   overflow-wrap: break-word;
-  white-space: normal;
   word-break: break-all;
+}
+
+.snack_img_show {
+    width: 650px;
+    height: 500px;
 }

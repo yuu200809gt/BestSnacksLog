@@ -15,12 +15,12 @@
 .Snack {
   background-color: rgb(255, 212, 177);
   padding-left: 0;
-  width: calc((60% - 70px) / 4);
+  width: 260px;
 }
 
 .snack_img {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 260px;
 }
 
 .my_snack_title {
@@ -28,4 +28,33 @@
     padding-left: 20px;
     font-size: 30px;
     font-weight: 500;
+}
+
+.snack_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.snack_alcohol {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.snack_types {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.snack_memo {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
+}
+
+.btn_position {
+    display: flex;
+    justify-content: center ;
 }

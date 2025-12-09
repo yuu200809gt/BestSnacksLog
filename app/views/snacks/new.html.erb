@@ -21,6 +21,8 @@
       <%= f.text_area :memo, placeholder: "メモを入力", class: 'form-control' %>
       <p class="required"><strong>※入力必須です</strong></p><br>
     </div>
+
+    <%= f.file_field :food %>
   
     <ul class="actions">
         <li class="actions"><%= f.submit "投稿する", class: "button btn btn-primary" %></li>
