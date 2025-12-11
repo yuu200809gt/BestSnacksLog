@@ -30,6 +30,17 @@
     color: #FFF;
 }
 
+.drop_login {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.avatar_icon {
+    height: 50px;
+    width: 50px;
+}
+
 .footer_container {
     height: 200px;
     background-color: rgb(155, 122, 122);
