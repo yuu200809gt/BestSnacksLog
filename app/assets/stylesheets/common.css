@@ -94,10 +94,17 @@
     width: calc((60% - 90px) / 4);
 }
 
+.item:hover {
+    transform: scale(1.2, 1.2);
+}
+
 .item_title {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: green;
+  font-weight: 500;
+  font-size: 30px;
 }
 
 .sign_container {
@@ -126,4 +133,28 @@
 
 .required {
     color: red;
+}
+
+.index_search {
+    margin-top: 100px;
+}
+
+.index_search_form {
+    height: 50px;
+    border-radius: 0.5rem;
+}
+
+.search_form {
+    width: 400px;
+}
+
+.search_button {
+    width: 100px;
+    background-color: rgb(190, 54, 54);
+    font-weight: 500;
+    color: #FFF;
+}
+
+.search_button:hover {
+    opacity: 0.5;
 }

@@ -1,5 +1,7 @@
 .snack_container {
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .total_snack {
