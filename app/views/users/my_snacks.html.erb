@@ -2,7 +2,7 @@
   <%= stylesheet_link_tag "snacks_index", "data-turbo-track": "reload" %>
 <% end %>
 <p class="my_snack_title">投稿済みおつまみ</p>
-<div class="snack_container">
+<div class="my_snack_container">
   <p class="total_snack"><strong><%= @snacks.count %></strong> 件が見つかりました。</p>
   <ul class="snack_list">
     <% @snacks.each do |snack| %>
