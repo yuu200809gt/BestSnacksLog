@@ -4,7 +4,7 @@
     <h2>ログイン</h2>
     <div class="form_field">
       <%= f.label :email, "メールアドレス" %><br />
-      <%= f.email_field :email, autocomplete: "email",  placeholder: "メールアドレスを入力", class: 'form-control' %>
+      <%= f.email_field :email, autocomplete: "email", autofocus: true,  placeholder: "メールアドレスを入力", class: 'form-control' %>
       <p class="required"><strong>※入力必須です</strong></p><br>
     </div>
   
