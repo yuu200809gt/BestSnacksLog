@@ -6,9 +6,11 @@ class User < ApplicationRecord
   has_many :snacks
   has_many :likes, dependent: :destroy
   has_many :liked_snacks, through: :likes, source: :snack
+  has_one_attached :avatar
 
   def self.guest_sign_in
-    find_or_create_by!(email: "guest@example.com") do |user|
+    find_or_create_by!(email: "guestr3@example.com") do |user|
+      user.name = "ゲストユーザー"
       user.password = SecureRandom.urlsafe_base64
     end
   end
