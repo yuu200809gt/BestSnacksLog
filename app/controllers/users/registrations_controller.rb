@@ -30,6 +30,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def registrations_params
-    params.require(:user).permit(:name, :email, :password, :avatar) # avatarはアイコン画像です。
+    params.require(:user).permit(:email, :password, :avatar) # avatarはアイコン画像です。
   end
 end

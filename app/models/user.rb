@@ -8,6 +8,8 @@ class User < ApplicationRecord
   has_many :liked_snacks, through: :likes, source: :snack
   has_one_attached :avatar
 
+  validates :name, presence: true
+
   def self.guest_sign_in
     find_or_create_by!(email: "guestr3@example.com") do |user|
       user.name = "ゲストユーザー"
