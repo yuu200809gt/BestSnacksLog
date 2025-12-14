@@ -15,13 +15,13 @@
   </div>  
 
   <div class="form_field">
-    <%= f.label :password, "アイコン画像" %><br />
+    <%= f.label :avatar, "アイコン画像" %><br />
     <%= f.file_field :avatar %>
   </div>  
 
   <ul class="actions">
       <li class="actions"><%= f.submit "更新する", class: "button btn btn-primary" %></li>
-      <li class="actions"><%= link_to "キャンセル", :back, class: "button btn btn-dark" %></li>
+      <li class="actions"><%= link_to "キャンセル", root_path, class: "button btn btn-dark" %></li>
   </ul>
 
 <% end %>
