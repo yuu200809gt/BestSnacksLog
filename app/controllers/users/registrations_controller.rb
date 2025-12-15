@@ -35,7 +35,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
 
   def ensure_guest_user
-    if current_user.email == "guestr3@example.com"
+    if current_user&.email == "guestr3@example.com"
       redirect_to root_path, alert: "ゲストユーザーのため編集できません。"
     end
   end
