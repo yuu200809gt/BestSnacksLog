@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_action :authenticate_user!, only: [:my_snacks]
   def index
     @users = User.all
   end
