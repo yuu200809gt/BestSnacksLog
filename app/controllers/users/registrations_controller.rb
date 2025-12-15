@@ -7,12 +7,23 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def edit; end
 
   def update
-    if current_user.update(registrations_params)
-      bypass_sign_in(@user)
+    sanitized_params = registrations_params.dup
+
+    # パスワードが空なら更新対象から外す（空文字で上書き事故を防ぐ）
+    if sanitized_params[:password].blank?
+      sanitized_params.delete(:password)
+    end
+  
+    if current_user.update(sanitized_params)
+      # パスワードを変えたときだけセッション更新が必要
+      if sanitized_params[:password].present?
+        bypass_sign_in(current_user)
+      end
+  
       redirect_to root_path, notice: "プロフィール情報が変更されました。"
     else
       flash.now[:alert] = "プロフィール情報の変更に失敗しました。"
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -24,7 +35,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
 
   def ensure_guest_user
-    if resource.email == "guestr3@example.com"
+    if current_user.email == "guestr3@example.com"
       redirect_to root_path, alert: "ゲストユーザーのため編集できません。"
     end
   end

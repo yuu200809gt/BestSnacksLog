@@ -10,10 +10,13 @@ class User < ApplicationRecord
 
   validates :name, presence: true
 
-  def self.guest_sign_in
-    find_or_create_by!(email: "guestr3@example.com") do |user|
-      user.name = "ゲストユーザー"
-      user.password = SecureRandom.urlsafe_base64
+  def guest_login
+    user = User.find_or_create_by!(email: "guest@example.com") do |u|
+      u.password = SecureRandom.urlsafe_base64
+      u.name = "ゲストユーザー"
     end
+  
+    sign_in user
+    redirect_to root_path, notice: "ゲストとしてログインしました"
   end
 end
