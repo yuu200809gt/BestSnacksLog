@@ -7,7 +7,7 @@
             <% if current_user.avatar.attached? %>
             <li><%= image_tag current_user.avatar , class: "avatar_icon" %></li>
             <% else %>
-            <li><%= image_tag "default_icon", class: "avatar_icon" %></li>
+            <li><%= image_tag "default_icon.png", class: "avatar_icon" %></li>
             <% end %>
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <%= current_user.name %>
