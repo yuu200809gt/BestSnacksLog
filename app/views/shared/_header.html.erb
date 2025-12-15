@@ -5,7 +5,7 @@
         <div class="account_button">
             <% if user_signed_in? %>
             <% if current_user.avatar.attached? %>
-            <li><%= image_tag current_user.avatar , class: "avatar_icon" %></li>
+            <li><%= image_tag url_for(current_user.avatar) , class: "avatar_icon" %></li>
             <% else %>
             <li><%= image_tag "default_icon.png", class: "avatar_icon" %></li>
             <% end %>
