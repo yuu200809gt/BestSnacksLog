@@ -83,3 +83,4 @@ production:
   database: best_snacks_log_production
   username: best_snacks_log
   password: <%= ENV["BEST_SNACKS_LOG_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
