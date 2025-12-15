@@ -1,24 +1,50 @@
-# README
+# BEST SNACKS LOG -お酒の相棒、きっと見つかる-
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サービス概要
+**お酒のおつまみに迷ったとき、最高の相性のいいおつまみを見つけられるアプリ**
 
-Things you may want to cover:
+## URL
+https://best-snacks-log-app-e0b7a7f46bab.herokuapp.com/
 
-* Ruby version
+## 開発背景
+最近週に1回以上お酒を飲むようになり、おつまみにこだわるようになりました。他の方はどのようなおつまみでお酒を飲んでいるかが気になり、そのおつまみを投稿でき、見ることができるようになったらいいなと思いこのアプリの開発に至りました。
 
-* System dependencies
+## ご利用方法
 
-* Configuration
+### ユーザー機能
+アプリを使用するために、新規登録・ログインorゲストログインが必須です。
 
-* Database creation
+### ユーザー編集機能
+ユーザー名、パスワード、アイコン画像を編集可能です。
 
-* Database initialization
+### 投稿機能
+ログイン後、右上に「投稿する」ボタンを押すと、入力フォームページになり投稿できます。
+ 
+### 一覧表示機能
+おつまみ一覧を見る場合は、検索フォームに未入力の状態で検索ボタンをクリックし閲覧可能です。
 
-* How to run the test suite
+### おつまみ編集機能
+自分が投稿したおつまみのみ、編集可能です。
 
-* Services (job queues, cache servers, search engines, etc.)
+## 実装予定の機能
 
-* Deployment instructions
+- 他のユーザーをフォローする機能や投稿にいいねをつけられる機能も実装予定です。
 
-* ...
+## ER図
+![ER図 drawio](docs/Best_Snacks_Log.drawio.png)
+
+## 主な使用技術
+
+### フロントエンド
+- HTML / CSS / JavaScript
+- Bootstrap 5.3.3
+- Hotwire（Turbo、Stimulus）（インタラクティブUI）
+
+### バックエンド
+- Ruby 3.3.3
+- Ruby on Rails 7.2.2.1
+- PostgreSQL（データベース）
+
+### インフラ・開発環境
+- Heroku（デプロイ）
+- Git/GitHub（バージョン管理）
