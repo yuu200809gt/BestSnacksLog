@@ -1,33 +1,32 @@
+/* ヘッダー */
+
+.header_title {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+}
 .header_container {
-    height: 100px;
-    background-color: rgb(155, 122, 122);
-    position: relative;
+    background-color: #e9ecef;
+    box-shadow: 1px 1px 1px 1px gray;
+    text-align: center;
+    padding: 1rem;
 }
 
 .header_left {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
-}
-
-.main_title {
-    margin-top: 0;
-}
-
-.page_title {
-    color: #FFF;
 }
 
 .account_button {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding-right: 60px;
+  gap: 1.5rem;
+  padding-right: 0.5rem;
 }
 
 .user_list {
-    color: #FFF;
+    color: #000;
 }
 
 .drop_login {
@@ -37,86 +36,120 @@
 }
 
 .avatar_icon {
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
+}
+
+/* フッター */
+
+.footer_title {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .footer_container {
-    height: 200px;
-    background-color: rgb(155, 122, 122);
+    background-color: #e9ecef;
     display: flex;
     align-items: center;
-    bottom: 0;
-    width: 100%;
+    padding: 2rem;
 }
 
-.footer_left {
-    padding-left: 30px;
-}
+/* メインコンテナ */
 
-.main_title_under {
-    margin-bottom: 0;
-}
-
-.main_content {
+.container {
     flex: 1;
-    margin-bottom: 50px;
+    padding: 1.5rem;
 }
 
-.top {
-    width: 100%;
-}
+/* ヒーローコンテンツ */
 
-.top_content {
+.top_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(56, 54, 54);
-    height: 40vh;
+    background-color: #111821;
+    border-radius: 2rem;
 }
 
 .top_title {
-    margin-top: 40px;
-    font-size: 50px;
+    font-size: 4rem;
     font-weight: 700;
     color: #FFF;
 }
 
 .sub_title {
-    font-size: 20px;
+    font-size: 1.6rem;
     color: #FFF;
 }
 
-.search {
-    font-size: 30px;
-    margin: 20px;
+/* ホームおつまみコンテナ */
+
+.latest_post_text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    padding: 1rem 0;
 }
 
-.recommend_container {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+.snack_container {
+    box-shadow: 1px 1px 1px 1px gray;
 }
 
-.item {
-    height: 20vh;
-    border-radius: 25px;
-    background-color: beige;
-    width: calc((60% - 90px) / 4);
+/* 検索フォーム */
+
+.index_search_form {
+    height: 3rem;
 }
 
-.item:hover {
-    transform: scale(1.2, 1.2);
+.home_search {
+    margin: 20px auto;
 }
 
-.item_title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: green;
-  font-weight: 500;
-  font-size: 30px;
+.search_form {
+    width: 25rem;
+    border-radius: .5rem 0 0 .5rem;
+    padding: 1rem;
+    border: 1px solid #000;
 }
+
+.search_button {
+    width: 5rem;
+    background-color: rgb(44, 25, 212);
+    font-weight: 500;
+    border-radius: 0 .5rem .5rem 0;
+    color: #FFF;
+}
+
+.search_button:hover {
+    opacity: 0.8;
+}
+
+/* 検索フォーム(ホーム画面以外のページ) */
+
+.index_search_form_show {
+    height: 3rem;
+}
+
+.search_form_show {
+    border-radius: .5rem 0 0 .5rem;
+    padding: 1rem;
+    border: 1px solid #000;
+}
+
+.search_button_show {
+    width: 5rem;
+    background-color: rgb(44, 25, 212);
+    font-weight: 500;
+    border-radius: 0 .5rem .5rem 0;
+    color: #FFF;
+}
+
+.search_button_show:hover {
+    opacity: 0.8;
+}
+
+/* 入力フォーム */
 
 .sign_container {
   background-color: rgb(255, 250, 243);
@@ -144,28 +177,4 @@
 
 .required {
     color: red;
-}
-
-.index_search {
-    margin-top: 100px;
-}
-
-.index_search_form {
-    height: 50px;
-    border-radius: 0.5rem;
-}
-
-.search_form {
-    width: 400px;
-}
-
-.search_button {
-    width: 100px;
-    background-color: rgb(190, 54, 54);
-    font-weight: 500;
-    color: #FFF;
-}
-
-.search_button:hover {
-    opacity: 0.5;
 }

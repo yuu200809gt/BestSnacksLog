@@ -1,21 +1,18 @@
 .snack_container {
-    padding: 30px;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .my_snack_container {
-    padding: 30px;
-}
-
-.total_snack {
-    padding-bottom: 20px;
+    padding: 2rem;
 }
 
 .snack_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 2rem;
 }
 
 .Snack {

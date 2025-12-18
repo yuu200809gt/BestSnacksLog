@@ -1,10 +1,10 @@
 <header>
   <div class="header_container">
     <div class="header_left">
-      <h2 class="main_title"><%= link_to "BEST SNACKS LOG", root_path, class: "page_title" %></h2>
+      <p><%= link_to "BEST SNACKS LOG", root_path, class: "header_title" %></p>
         <div class="account_button">
             <% if user_signed_in? %>
-            <% if user_signed_in? && current_user.avatar.attached? && current_user.avatar.blob&.persisted? %>
+            <% if current_user.avatar.attached? && current_user.avatar.blob&.persisted? %>
             <li><%= image_tag url_for(current_user.avatar) , class: "avatar_icon" %></li>
             <% else %>
             <li><%= image_tag "default_icon.png", class: "avatar_icon" %></li>
