@@ -1,3 +1,5 @@
 class HomesController < ApplicationController
-  def index;end
+  def index
+  @snacks = Snack.all.order(created_at: :desc).limit(2)
+  end
 end

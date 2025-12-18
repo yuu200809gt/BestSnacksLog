@@ -4,7 +4,9 @@
 
 <div class="snack_container">
   <p class="total_snack"><strong><%= @snacks.count %></strong> 件が見つかりました。</p>
-  <%= render "shared/search" %>
+  <%= form_with url: snacks_path, method: :get, local: true do |f| %>
+    <%= f.text_field :keyword, placeholder: "キーワードを入力", class: "index_search_form_show search_form_show" %><%= f.submit "検索", class: "index_search_form_show search_button_show" %>
+  <% end %>
 </div>
 <ul class="snack_list">
   <% @snacks.each do |snack| %>
