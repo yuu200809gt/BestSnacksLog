@@ -20,9 +20,9 @@
             </ul>
             <%= link_to "投稿する", new_snack_path, class: "btn btn-success" %>
             <% else %>
-            <li><%= link_to "ゲストログイン", users_guest_sign_in_path, data: { turbo_method: :post }, class: "user_list" %></li>
-            <li><%= link_to "ログイン", new_user_session_path, class: "user_list Login" %></li>
-            <li><%= link_to "新規登録", new_user_registration_path, class: "user_list New" %></li>
+            <li><%= link_to "ゲストログイン", users_guest_sign_in_path, data: { turbo_method: :post }, class: "login_list" %></li>
+            <li><%= link_to "ログイン", new_user_session_path, class: "login_list" %></li>
+            <li><%= link_to "新規登録", new_user_registration_path, class: "login_list" %></li>
             <% end %>
         </div>
     </div>   

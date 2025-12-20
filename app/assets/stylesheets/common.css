@@ -4,6 +4,7 @@
     color: #000;
     font-size: 2rem;
     font-weight: bold;
+    white-space: nowrap;
 }
 .header_container {
     background-color: #e9ecef;
@@ -25,8 +26,9 @@
   padding-right: 0.5rem;
 }
 
-.user_list {
+.login_list {
     color: #000;
+    white-space: nowrap;
 }
 
 .drop_login {
@@ -179,4 +181,47 @@
 
 .required {
     color: red;
+}
+
+@media (max-width: 900px) {
+.top_title {
+    font-size: 2rem;
+}
+
+.sub_title {
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.search_form {
+    width: 80%;
+    border-radius: .5rem 0 0 .5rem;
+    padding: 1rem;
+    border: 1px solid #000;
+}
+
+.search_button {
+    width: 20%;
+    background-color: rgb(44, 25, 212);
+    font-weight: 500;
+    border-radius: 0 .5rem .5rem 0;
+    color: #FFF;
+}
+
+.snack_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.Snack {
+  background-color: rgb(255, 212, 177);
+  padding-left: 0;
+  width: 100% !important;
+}
+
+.footer_container {
+    justify-content: center;
+}
 }
