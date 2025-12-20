@@ -39,10 +39,20 @@ a {
     text-decoration: none;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 li {
     list-style: none;
 }
 
 p {
   margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
 }
