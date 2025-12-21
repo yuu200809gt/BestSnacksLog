@@ -142,13 +142,14 @@
 }
 
 .search_form_show {
+    width: 75%;
     border-radius: .5rem 0 0 .5rem;
     padding: 1rem;
     border: 1px solid #000;
 }
 
 .search_button_show {
-    width: 5rem;
+    width: 25%;
     background-color: rgb(44, 25, 212);
     font-weight: 500;
     border-radius: 0 .5rem .5rem 0;
@@ -273,6 +274,16 @@
 
 .button {
     width: 100%;
+}
+
+.total_snack {
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.snack_img {
+    height: 100% !important;
+    width: 100% !important;
 }
 
 }
