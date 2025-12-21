@@ -267,6 +267,10 @@
     margin: 3rem 0 0 0;
 }
 
+.Login_form {
+    width: 20rem !important;
+}
+
 .button {
     width: 100%;
 }
