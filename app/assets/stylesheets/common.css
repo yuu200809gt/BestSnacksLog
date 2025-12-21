@@ -188,6 +188,10 @@
 }
 
 @media (max-width: 992px) {
+.container {
+    padding: 1rem 1rem;
+}
+
 .top_title {
     font-size: 2rem;
 }
