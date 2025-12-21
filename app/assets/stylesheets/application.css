@@ -56,3 +56,11 @@ img {
   vertical-align: middle;
   width: 100%;
 }
+
+@media (max-width: 992px){
+
+form {
+  width: 100%;
+}
+
+}
