@@ -37,9 +37,15 @@
     color: black;
 }
 
+.new_post {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: #2fd366;
+    border-radius: 0.5rem;
+}
 .avatar_icon {
-    height: 5rem;
-    width: 5rem;
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 /* フッター */
@@ -183,7 +189,7 @@
     color: red;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
 .top_title {
     font-size: 2rem;
 }
@@ -223,5 +229,20 @@
 
 .footer_container {
     justify-content: center;
+}
+
+.header_title {
+    font-size: 1rem;
+}
+
+.account_button {
+    gap: 1rem;
+    padding-right: 0.5rem;
+}
+
+.login_list {
+    color: #000;
+    white-space: nowrap;
+    font-size: 0.8rem;
 }
 }
