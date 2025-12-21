@@ -1,22 +1,22 @@
-<div class="sign_container">
+<div class="Login_container">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
     <h2>ログイン</h2>
     <div class="form_field">
       <%= f.label :email, "メールアドレス" %><br />
-      <%= f.email_field :email, autocomplete: "email", autofocus: true,  placeholder: "メールアドレスを入力", class: 'form-control' %>
+      <%= f.email_field :email, autocomplete: "email", autofocus: true,  placeholder: "メールアドレスを入力", class: 'form-control Login_form' %>
       <p class="required"><strong>※入力必須です</strong></p><br>
     </div>
   
     <div class="form_field">
       <%= f.label :password, "パスワード" %><br />
-      <%= f.password_field :password, autocomplete: "new-password",  placeholder: "パスワードを入力", class: 'form-control' %>
+      <%= f.password_field :password, autocomplete: "new-password",  placeholder: "パスワードを入力", class: 'form-control Login_form' %>
       <p class="required"><strong>※入力必須です</strong></p><br>
     </div> 
 
     <ul class="actions">
-        <li class="actions"><%= f.submit "ログイン", class: "button btn btn-primary" %></li>
-        <li class="actions"><%= link_to "アカウント作成", new_user_registration_path, class: "button btn btn-dark" %></li>
+        <li class="actions"><%= f.submit "ログイン", class: "button btn btn-primary Login_form" %></li>
+        <li class="actions"><%= link_to "アカウント作成", new_user_registration_path, class: "button btn btn-dark Login_form" %></li>
     </ul>
   <% end %>
 </div>
