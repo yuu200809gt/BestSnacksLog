@@ -28,7 +28,7 @@ https://best-snacks-log-app-e0b7a7f46bab.herokuapp.com/
 
 ## 実装予定の機能
 
-- 他のユーザーをフォローする機能や投稿にいいねをつけられる機能も実装予定です。
+- お気に入り登録機能なども実装予定です。
 
 ## ER図
 ![ER図 drawio](docs/Best_Snacks_Log.drawio.png)
@@ -47,4 +47,5 @@ https://best-snacks-log-app-e0b7a7f46bab.herokuapp.com/
 
 ### インフラ・開発環境
 - Heroku（デプロイ）
+- AWS S3（ストレージ）
 - Git/GitHub（バージョン管理）
