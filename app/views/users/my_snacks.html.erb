@@ -1,6 +1,3 @@
-<% content_for :stylesheets do %>
-  <%= stylesheet_link_tag "snacks_index", "data-turbo-track": "reload" %>
-<% end %>
 <p class="my_snack_title">投稿済みおつまみ</p>
 <div class="my_snack_container">
   <p class="total_snack"><strong><%= @snacks.count %></strong> 件が見つかりました。</p>
@@ -17,7 +14,7 @@
       <p class="snack_alcohol">合うお酒：<%= snack.best_alcohol %></p>
       <p class="snack_types">食べ物のカテゴリ：<%= snack.food_types %></p>
       <p class="snack_memo">メモ：<%= snack.memo %></p>
-      <p><%= link_to "詳細はこちら", snack, class: "btn btn-dark" %></p>
+      <p><%= link_to "編集", [:edit, snack], class: "edit_page btn btn-primary" %></p>
     </div>
     </li>
     <% end %> 

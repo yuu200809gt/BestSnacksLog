@@ -1,10 +1,4 @@
-<% content_for :stylesheets do %>
-  <%= stylesheet_link_tag "snacks_show", "data-turbo-track": "reload" %>
-<% end %>
-
-<div class="return_edit">
-<p><%= link_to "⬅ 戻る", :back, class: "return_page" %></p>
-</div>
+<p><%= link_to "← 戻る", :back, class: "return_page" %></p>
 
 <div class="snacks_top">
   <div class="snacks_item">
@@ -13,10 +7,9 @@
     <% else %>
     <%= image_tag "food.png", alt: "おつまみ画像", class: "snack_img_show" %>
     <% end %>
-    <h5 class="snacks_name"><%= @snack.name %></h5>
-    <p class="snacks_alcohol">合うお酒：<%= @snack.best_alcohol %></p>
-    <p class="snacks_types">食べ物のカテゴリ：<%= @snack.food_types %></p>
-    <p class="snacks_memo">メモ<br><%= wrap_text(@snack.memo, 49) %></p>
-    <p><%= link_to "編集", [:edit, @snack], class: "edit_page btn btn-primary" %></p> 
+    <p class="snacks_name_show"><%= @snack.name %></p>
+    <p class="snack_alcohol_show"><strong>合うお酒：</strong><%= @snack.best_alcohol %></p>
+    <p class="snack_type_show"><strong>食べ物のカテゴリ</strong>：<%= @snack.food_types %></p>
+    <p class="snack_memo_show"><strong>メモ</strong><br><%= wrap_text(@snack.memo, 40) %></p> 
   </div>
 </div>
