@@ -63,7 +63,7 @@
     padding: 2rem;
 }
 
-/* メインコンテナ */
+/* メインコンテナ（全ページ共通CSS） */
 
 .container {
     flex: 1;
@@ -199,6 +199,123 @@
     color: red;
 }
 
+/* おつまみ一覧ページ */
+
+.snack_container {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_snack_container {
+    padding: 2rem;
+}
+
+.snack_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.Snack {
+  background-color: rgb(255, 212, 177);
+  padding-left: 0;
+  width: 260px;
+}
+
+.snack_img {
+    height: 200px;
+    width: 260px;
+}
+
+.my_snack_title {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.snack_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.snack_alcohol {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.snack_types {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.snack_memo {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
+}
+
+.btn_position {
+    display: flex;
+    justify-content: center ;
+}
+
+/* おつまみ詳細ページ */
+
+.return_page {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.snacks_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: auto;
+    padding: 1rem;
+}
+
+.snacks_item {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 1rem;
+}
+
+.snack_memo_show {
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.snack_img_show {
+    width: 100%;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.snacks_name_show {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.snack_alcohol_show {
+    margin-bottom: 0.5rem;
+}
+
+.snack_type_show {
+    margin-bottom: 0.5rem;
+}
+
+/* 自分(current_user)の編集ボタン */
+
+.edit_page {
+    width: 100%;
+}
+
 @media (max-width: 992px) {
 .container {
     padding: 1rem 1rem;
@@ -284,6 +401,14 @@
 .snack_img {
     height: 100% !important;
     width: 100% !important;
+}
+
+.return_page {
+    font-size: 0.8rem;
+}
+
+.snack_img_show {
+    padding: 0
 }
 
 }
