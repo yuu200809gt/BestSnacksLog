@@ -216,12 +216,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 1rem;
 }
 
 .Snack {
   background-color: rgb(255, 212, 177);
   padding-left: 0;
   width: 260px;
+}
+
+.index_snacks {
+    flex-grow: 1;
 }
 
 .snack_img {
