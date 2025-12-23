@@ -11,7 +11,7 @@
 <div class="snack_container_top">
 <ul class="snack_list">
   <% @snacks.each do |snack| %>
-  <li class="Snack">
+  <li class="Snack index_snacks">
   <div class="snack_detail">
     <% if snack.food.attached? %>
     <%= image_tag snack.food.variant(:index_size), alt: "おつまみ画像" %>

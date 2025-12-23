@@ -224,6 +224,11 @@
   width: 260px;
 }
 
+.index_snacks {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
 .snack_img {
     height: 200px;
     width: 260px;
