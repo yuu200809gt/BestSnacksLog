@@ -216,6 +216,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 1rem;
 }
 
 .Snack {
@@ -225,7 +226,6 @@
 }
 
 .index_snacks {
-    padding: 1rem;
     flex-grow: 1;
 }
 
