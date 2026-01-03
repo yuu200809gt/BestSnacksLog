@@ -48,4 +48,5 @@ https://best-snacks-log-app-e0b7a7f46bab.herokuapp.com/
 ### インフラ・開発環境
 - Heroku（デプロイ）
 - AWS S3（ストレージ）
+- RSpec（テスト）
 - Git/GitHub（バージョン管理）
